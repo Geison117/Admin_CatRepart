@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.admincatrepart.ui.pedido_pendiente.HomeFragment"
+        android:label="Pedidos en fila"
+        tools:layout="@layout/fragment_pedido_pendiente" />
+
+    <fragment
+        android:id="@+id/nav_pedido_enviado"
+        android:name="com.example.admincatrepart.ui.pedido_enviado.pedido_enviado"
+        android:label="Pedidos en camino"
+        tools:layout="@layout/pedido_enviado_fragment" />
+
+    <fragment
+        android:id="@+id/nav_pedido_entregado"
+        android:name="com.example.admincatrepart.ui.pedido_entregado.PedidoEntregado"
+        android:label="Pedidos entregados"
+        tools:layout="@layout/pedido_entregado_fragment" />
+
+    <fragment
+        android:id="@+id/nav_mensajes"
+        android:name="com.example.admincatrepart.ui.Mensajes.Mensajes"
+        android:label="Mensajes de clientes"
+        tools:layout="@layout/pedido_entregado_fragment" />
+</navigation>
